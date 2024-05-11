@@ -6,13 +6,12 @@ import Meals from "../Meals/Meals";
 const Header=(props)=>
     {
      return<Fragment>
-     <header ><h1>ReactMeals</h1>
-        <HeaderCartButton/></header>
-      <div>
-
+     <header className={classes.header} >
+      <h1>ReactMeals</h1>
+        <HeaderCartButton onClick={props.onShowCart}/></header>
+      <div className={classes['main-image']}>
       <img src={foodImage} alt='A Plate Full of Delicious Food Image!'/>
-   
-    </div>
+       </div>
 </Fragment>
 }
 
